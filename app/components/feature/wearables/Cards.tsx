@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Col } from 'react-native-easy-grid';
-import { Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 
-import { ICardData, ICardParams } from 'app/models/index';
+import { ICardParams } from 'app/models/index';
 import { wearableStyle } from 'app/styles/index';
 import { Colors } from 'app/theme/index';
 
@@ -16,6 +17,7 @@ const Cards = ({ data }: ICardParams) => {
     value,
     label,
     hasButton,
+    displayArrow,
   } = data;
   return (
     <Col
@@ -39,13 +41,22 @@ const Cards = ({ data }: ICardParams) => {
           ]}>
           {value}
         </Text>
-        <Text
-          style={[
-            wearableStyle.label,
-            { color: isActive ? activeTextColor : Colors.TEXT.LIGHT_GRAY },
-          ]}>
-          {label}
-        </Text>
+        <View style={wearableStyle.labelContainer}>
+          <Text
+            style={[
+              wearableStyle.label,
+              { color: isActive ? activeTextColor : Colors.TEXT.LIGHT_GRAY },
+            ]}>
+            {label}
+          </Text>
+          {displayArrow && (
+            <Ionicons
+              name="chevron-forward"
+              size={18}
+              color={Colors.TEXT.LIGHT_GRAY}
+            />
+          )}
+        </View>
       </TouchableOpacity>
     </Col>
   );

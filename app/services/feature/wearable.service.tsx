@@ -18,7 +18,7 @@ export const submitFeelingValue = params => {
       .then(success => {
         console.log('submitFeelingValue Success', success);
         if (success) {
-          resolve(success);
+          resolve(success['data']['data']);
         } else {
           reject(success);
         }

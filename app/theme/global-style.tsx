@@ -7,7 +7,7 @@ export const GStyle = StyleSheet.create({
     flex: 1,
   },
   headerTitle: {
-    fontSize: 18,
-    color: '#fff',
+    fontSize: 20,
+    color: 'rgb(51,62,111)',
   },
 });

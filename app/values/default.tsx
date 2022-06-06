@@ -9,6 +9,7 @@ export const WEARABLE_STATS = {
     value: '6,800',
     label: 'Steps',
     hasButton: false,
+    displayArrow: false,
   },
   FLOOR: {
     image: Images.ICONS.COLORED_FLOOR,
@@ -18,6 +19,7 @@ export const WEARABLE_STATS = {
     value: '6 Floors',
     label: 'Flights Climbed',
     hasButton: false,
+    displayArrow: true,
   },
   RUN: {
     image: Images.ICONS.COLORED_RUN,
@@ -27,6 +29,7 @@ export const WEARABLE_STATS = {
     value: '2.3Km',
     label: 'Walk/Run',
     hasButton: false,
+    displayArrow: true,
   },
   ENERGY: {
     image: Images.ICONS.COLORED_ENERGY,
@@ -36,6 +39,7 @@ export const WEARABLE_STATS = {
     value: '520 Cals',
     label: 'Burned Energy',
     hasButton: false,
+    displayArrow: true,
   },
   SLEEP: {
     image: Images.ICONS.COLORED_SLEEP,
@@ -45,6 +49,7 @@ export const WEARABLE_STATS = {
     value: '6 Hrs',
     label: 'Sleep',
     hasButton: false,
+    displayArrow: true,
   },
   HEART: {
     image: Images.ICONS.COLORED_HEART,
@@ -54,5 +59,6 @@ export const WEARABLE_STATS = {
     value: '65 BPM',
     label: 'Heart Rate',
     hasButton: false,
+    displayArrow: true,
   },
 };

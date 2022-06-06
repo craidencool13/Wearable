@@ -1,7 +1,11 @@
+export interface IFeelingSliderParams {
+  onSubmitFeeling(): any;
+  feelingVal: any;
+  setFeelingVal: any;
+  activeEmoji: any;
+}
 export interface ICardParams {
-  onClickCard(): any;
   data: ICardData;
-  isActive: boolean;
 }
 
 export interface ICardData {
@@ -12,4 +16,5 @@ export interface ICardData {
   label: string;
   value: string;
   hasButton: boolean;
+  displayArrow: boolean;
 }

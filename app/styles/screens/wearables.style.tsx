@@ -29,6 +29,10 @@ export const wearableStyle = StyleSheet.create({
     fontWeight: 'bold',
     // color: Colors.TEXT.DARK_BLUE,
   },
+  labelContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   label: {
     fontSize: 16,
     // color: Colors.TEXT.LIGHT_GRAY,
