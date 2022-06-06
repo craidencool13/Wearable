@@ -1,0 +1,58 @@
+import { Images, Colors } from 'app/theme/index';
+
+export const WEARABLE_STATS = {
+  STEPS: {
+    image: Images.ICONS.COLORED_STEPS,
+    image_active: Images.ICONS.WHITE_STEPS,
+    activeTextColor: Colors.BACKGROUND.WHITE,
+    activeBgColor: 'rgba(252,214,58,0.5)',
+    value: '6,800',
+    label: 'Steps',
+    hasButton: false,
+  },
+  FLOOR: {
+    image: Images.ICONS.COLORED_FLOOR,
+    image_active: Images.ICONS.WHITE_FLOOR,
+    activeTextColor: Colors.BACKGROUND.WHITE,
+    activeBgColor: 'rgba(0,168,235,0.5)',
+    value: '6 Floors',
+    label: 'Flights Climbed',
+    hasButton: false,
+  },
+  RUN: {
+    image: Images.ICONS.COLORED_RUN,
+    image_active: Images.ICONS.WHITE_RUN,
+    activeTextColor: Colors.BACKGROUND.WHITE,
+    activeBgColor: 'rgba(0,192,123,0.5)',
+    value: '2.3Km',
+    label: 'Walk/Run',
+    hasButton: false,
+  },
+  ENERGY: {
+    image: Images.ICONS.COLORED_ENERGY,
+    image_active: Images.ICONS.WHITE_ENERGY,
+    activeTextColor: Colors.BACKGROUND.WHITE,
+    activeBgColor: 'rgba(245,121,75,0.5)',
+    value: '520 Cals',
+    label: 'Burned Energy',
+    hasButton: false,
+  },
+  SLEEP: {
+    image: Images.ICONS.COLORED_SLEEP,
+    image_active: Images.ICONS.WHITE_SLEEP,
+    activeTextColor: Colors.BACKGROUND.WHITE,
+    activeBgColor: 'rgba(113,74,255,0.5)',
+    value: '6 Hrs',
+    label: 'Sleep',
+    hasButton: false,
+  },
+  HEART: {
+    image: Images.ICONS.COLORED_HEART,
+    image_active: Images.ICONS.WHITE_HEART,
+    activeTextColor: Colors.BACKGROUND.WHITE,
+    activeBgColor: 'rgba(244,88,152, 0.5)',
+    value: '65 BPM',
+    label: 'Heart Rate',
+    hasButton: false,
+  },
+};
